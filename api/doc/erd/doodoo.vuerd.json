@@ -1,0 +1,343 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 5000,
+    "height": 5000,
+    "scrollTop": -1,
+    "scrollLeft": -24,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+      "5_6YBQAoXjzi4t_0dg3fU"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "11ac7e47-285b-4a0d-9b8f-e3462550f7c9": {
+        "id": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "admin",
+        "comment": " 관리자 테이블",
+        "columnIds": [
+          "0e1b512d-e5c2-48ba-807f-82528186ee87",
+          "c743faea-2c7d-4b7e-97e3-2421dc36d318",
+          "eaad44fd-e71a-4bd5-bcba-ced8e15bea8d",
+          "7f898e29-917c-49d7-8304-9631dbaacaa0",
+          "a9dede74-cf7a-42a8-80bb-29ccebcbd6b1",
+          "f3e35b39-c3cf-4194-abed-b5c160f14090",
+          "4188a817-78ed-4f78-a66a-08ea2dc76462",
+          "5ff8e2f4-8f13-4b16-9300-fc65346a710d",
+          "d713b657-6ec4-4939-b5f1-757c5fd8b286"
+        ],
+        "seqColumnIds": [
+          "0e1b512d-e5c2-48ba-807f-82528186ee87",
+          "c743faea-2c7d-4b7e-97e3-2421dc36d318",
+          "eaad44fd-e71a-4bd5-bcba-ced8e15bea8d",
+          "7f898e29-917c-49d7-8304-9631dbaacaa0",
+          "a9dede74-cf7a-42a8-80bb-29ccebcbd6b1",
+          "f3e35b39-c3cf-4194-abed-b5c160f14090",
+          "4188a817-78ed-4f78-a66a-08ea2dc76462",
+          "5ff8e2f4-8f13-4b16-9300-fc65346a710d",
+          "d713b657-6ec4-4939-b5f1-757c5fd8b286"
+        ],
+        "ui": {
+          "x": 161,
+          "y": 53,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 81,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1732526617553,
+          "createAt": 1732524945320
+        }
+      },
+      "5_6YBQAoXjzi4t_0dg3fU": {
+        "id": "5_6YBQAoXjzi4t_0dg3fU",
+        "name": "car_info",
+        "comment": "자동차 정보 테이블",
+        "columnIds": [
+          "qJFuuwcxaWNkBiV_Qb-y1"
+        ],
+        "seqColumnIds": [
+          "qJFuuwcxaWNkBiV_Qb-y1"
+        ],
+        "ui": {
+          "x": 152,
+          "y": 373,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 105,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1732526665397,
+          "createAt": 1732526607584
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "0e1b512d-e5c2-48ba-807f-82528186ee87": {
+        "id": "0e1b512d-e5c2-48ba-807f-82528186ee87",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "admin_no",
+        "comment": "관리자 번호",
+        "dataType": "BIGINT(20)",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 65,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "c743faea-2c7d-4b7e-97e3-2421dc36d318": {
+        "id": "c743faea-2c7d-4b7e-97e3-2421dc36d318",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "admin_email",
+        "comment": "이메일",
+        "dataType": "VARCHAR(30)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 69,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "eaad44fd-e71a-4bd5-bcba-ced8e15bea8d": {
+        "id": "eaad44fd-e71a-4bd5-bcba-ced8e15bea8d",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "admin_password",
+        "comment": "비밀번호",
+        "dataType": "VARCHAR(64)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 90,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "7f898e29-917c-49d7-8304-9631dbaacaa0": {
+        "id": "7f898e29-917c-49d7-8304-9631dbaacaa0",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "admin_name",
+        "comment": "이름",
+        "dataType": " VARCHAR(200)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 70,
+          "widthComment": 60,
+          "widthDataType": 84,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "a9dede74-cf7a-42a8-80bb-29ccebcbd6b1": {
+        "id": "a9dede74-cf7a-42a8-80bb-29ccebcbd6b1",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "admin_phone",
+        "comment": "연락처",
+        "dataType": " VARCHAR(100)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 74,
+          "widthComment": 60,
+          "widthDataType": 84,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "f3e35b39-c3cf-4194-abed-b5c160f14090": {
+        "id": "f3e35b39-c3cf-4194-abed-b5c160f14090",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "admin_status",
+        "comment": "상태여부(활성화,비활성화)",
+        "dataType": " VARCHAR(10)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 71,
+          "widthComment": 144,
+          "widthDataType": 78,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "4188a817-78ed-4f78-a66a-08ea2dc76462": {
+        "id": "4188a817-78ed-4f78-a66a-08ea2dc76462",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "del_at",
+        "comment": "삭제여부",
+        "dataType": " VARCHAR(1)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 71,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "5ff8e2f4-8f13-4b16-9300-fc65346a710d": {
+        "id": "5ff8e2f4-8f13-4b16-9300-fc65346a710d",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "cret_dt",
+        "comment": "등록일",
+        "dataType": "timestamp",
+        "default": "current_timestamp()",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 108
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "d713b657-6ec4-4939-b5f1-757c5fd8b286": {
+        "id": "d713b657-6ec4-4939-b5f1-757c5fd8b286",
+        "tableId": "11ac7e47-285b-4a0d-9b8f-e3462550f7c9",
+        "name": "updt_dt",
+        "comment": "수정일",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732524945320,
+          "createAt": 1732524945320
+        }
+      },
+      "qJFuuwcxaWNkBiV_Qb-y1": {
+        "id": "qJFuuwcxaWNkBiV_Qb-y1",
+        "tableId": "5_6YBQAoXjzi4t_0dg3fU",
+        "name": "car_code",
+        "comment": "자동차일련번호",
+        "dataType": "BIGINT(20)",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 86,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732530002588,
+          "createAt": 1732526643119
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  },
+  "lww": {
+    "5_6YBQAoXjzi4t_0dg3fU": [
+      "tableEntities",
+      1732526607583,
+      -1,
+      {
+        "name": 1732526665396,
+        "comment": 1732526641270
+      }
+    ],
+    "11ac7e47-285b-4a0d-9b8f-e3462550f7c9": [
+      "tableEntities",
+      -1,
+      -1,
+      {
+        "name": 1732526615926
+      }
+    ],
+    "qJFuuwcxaWNkBiV_Qb-y1": [
+      "tableColumnEntities",
+      1732526643118,
+      -1,
+      {
+        "name": 1732529931169,
+        "options(primaryKey)": 1732529985358,
+        "dataType": 1732529992129,
+        "comment": 1732530002588
+      }
+    ]
+  }
+}

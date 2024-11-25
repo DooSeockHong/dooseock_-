@@ -1,0 +1,58 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.1'
+	id 'io.spring.dependency-management' version '1.1.5'
+}
+
+group = 'com.doodooapi'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '21' // Java 버전 설정
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+// dependencies {
+// 	implementation 'org.springframework.boot:spring-boot-starter-web'
+// 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+// 	implementation 'com.querydsl:querydsl-jpa:5.0.0'
+// 	implementation 'org.modelmapper:modelmapper:3.0.0'
+//     annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jpa'
+// 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+// 	compileOnly 'org.projectlombok:lombok'
+// 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+// 	annotationProcessor 'org.projectlombok:lombok'
+// 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+// 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+// }
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'com.querydsl:querydsl-jpa:5.0.0'
+    implementation 'org.modelmapper:modelmapper:3.0.0'
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jpa'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
